@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Sai Heaters</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #d62828;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #333;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      flex: 1 1 200px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    @media (max-width: 600px) {
+      .products {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sri Sai Heaters</h1>
+    <p>Reliable Industrial & Domestic Heating Solutions</p>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      Sri Sai Heaters specializes in manufacturing high-quality heating elements and solutions for industrial and domestic use.
+      With a commitment to durability and performance, we serve a wide range of clients across the country.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Immersion Heaters</h3>
+        <p>Durable and efficient water heating elements for tanks and boilers.</p>
+      </div>
+      <div class="product">
+        <h3>Cartridge Heaters</h3>
+        <p>High-watt density heaters for industrial mold heating applications.</p>
+      </div>
+      <div class="product">
+        <h3>Room Heaters</h3>
+        <p>Safe and energy-efficient heaters for home and office use.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> <a href="tel:+919xxxxxxxxx">+91 9xxxxxxxxx</a></p>
+    <p><strong>Email:</strong> <a href="mailto:srisaiheaters@example.com">srisaiheaters@example.com</a></p>
+    <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Sri Sai Heaters. All rights reserved.
+  </footer>
+
+</body>
+</html>
