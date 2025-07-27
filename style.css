@@ -29,10 +29,58 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
-    padding: 60px 20px;
-    background: #e0e0e0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 80px 0;
     text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 1.5rem;
 }
 
 section {
@@ -44,4 +92,41 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-image {
+        height: 200px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Feature icons sizing */
+.feature-icon img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+/* Product Image Styling */
+.product-image {
+    width: 100%;
+    height: 250px; /* Fixed height for consistency */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintains aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.product-image:hover img {
+    transform: scale(1.05);
 }
