@@ -93,6 +93,29 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+/* Style the navigation links */
+header nav a {
+  color: #ADD8E6; /* Light Blue */
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #87CEEB; /* Slightly darker blue on hover */
+}
+
+/* Style the contact button separately */
+header nav a.contact-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+header nav a.contact-button:hover {
+  background-color: #367C39; /* Darker green on hover */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .product-image {
@@ -129,4 +152,14 @@ footer {
 /* Hover effect for images */
 .product-image:hover img {
     transform: scale(1.05);
+}
+
+/* Contact details styling */
+#contact .contact-details a {
+  color: red; /* Initial color */
+  transition: color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+#contact .contact-details a:hover {
+  color: darkred; /* Color on hover */
 }
